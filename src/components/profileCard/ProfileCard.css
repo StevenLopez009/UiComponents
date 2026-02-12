@@ -1,0 +1,140 @@
+.profile-card {
+  background-color: #000000;
+  border-radius: 28px;
+  padding: 15px;
+  width: 300px;
+  height: 350px;
+  margin: 20px auto;
+  color: white;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.profile-card__cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  height: 40%;
+  width: 100%;
+}
+
+.profile-card__avatar-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  width: 100%;
+  margin: -40px 0 0 0;
+  z-index: 1;
+}
+
+.profile-card__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-card__tag-btn {
+  width: 30%;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.profile-card__body {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+
+
+.profile-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.profile-card__name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profile-card__role {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #a1a1aa;
+}
+
+.profile-card__bookmark {
+  background: #1f1f1f;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  color: white;
+}
+
+.profile-card__bookmark:hover {
+  background: #2a2a2a;
+}
+
+.profile-card__stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+}
+
+.profile-card__stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-card__value {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.profile-card__label {
+  font-size: 12px;
+  color: #a1a1aa;
+}
+
+.profile-card__icon--yellow {
+  color: #facc15;
+}
+
+.profile-card__icon--blue {
+  color: #3b82f6;
+}
+
+.profile-card__icon--purple {
+  color: #a855f7;
+}
+
+
+.profile-card__contact-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile-card__contact-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
