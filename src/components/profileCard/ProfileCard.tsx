@@ -1,7 +1,6 @@
 import './ProfileCard.css'
 import { Star, Flag, Clock } from "lucide-react";
 
-// Define la interfaz para las props
 interface Props {
   backgroundImage: string;
   imageUrl?: string; 
