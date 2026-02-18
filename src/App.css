@@ -4,4 +4,10 @@
 
 .app {
   background-color: rgb(221, 221, 221);
+  display: flex;
+  display: block;
+
+  gap: 20px;  
 }
+
+

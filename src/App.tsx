@@ -5,12 +5,14 @@ import backgroundImage2 from "./assets/images/portada2.jpg";
 import perfilImage from "./assets/images/perfil.jpg";
 import perfilImage2 from "./assets/images/perfil2.jpg";
 import OrderTrackingTimeline from "./components/OrderTrackingTimeline/OrderTrackingTimeline";
-import WeatherCard from "./components/WeatherCard/WeatherCatd";
+import WeatherCard from "./components/WeatherCard/WeatherCard";
+import MonthlySpendingCard from "./components/MonthlySpendingCard/MonthlySpendingCard";
 
 function App() {
   return (
     <div className="app">
       <WeatherCard />
+      <MonthlySpendingCard />
       <OrderTrackingTimeline
         order={new Date("2026-02-10")}
         shipping={new Date("2026-02-11")}

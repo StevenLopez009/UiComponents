@@ -1,0 +1,156 @@
+.msc {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 20px;
+  width: 320px;
+  height: fit-content;
+  margin: 20px auto;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.msc--collapsed {
+  padding-bottom: 16px;
+}
+
+/* ===== Header ===== */
+.msc__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.msc__month {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ca3af;
+  letter-spacing: 0.3px;
+}
+
+.msc__menu {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #9ca3af;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* ===== Amount ===== */
+.msc__amount {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+/* ===== Trend ===== */
+.msc__trend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.msc__badge {
+  background: #ecfdf5;
+  color: #16a34a;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.msc__trend-text {
+  color: #9ca3af;
+}
+
+.msc__amoun_total{
+  display: flex;
+}
+
+/* ===== Toggle ===== */
+.msc__toggle {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 12px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.msc__arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.msc__arrow--open {
+  transform: rotate(90deg);
+}
+
+/* ===== Categories ===== */
+.msc__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 12px;
+  padding-bottom: 4px;
+  animation: msc-slide 0.3s ease;
+}
+
+.msc__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.msc__item-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.msc__icon {
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+}
+
+.msc__name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.msc__item-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.msc__percent {
+  color: #6b7280;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.msc__chev {
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+/* ===== Animation ===== */
+@keyframes msc-slide {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
