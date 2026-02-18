@@ -106,6 +106,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .msc__item-left {
@@ -140,7 +141,15 @@
 
 .msc__chev {
   color: #9ca3af;
-  font-size: 16px;
+  font-size: 30px;
+}
+
+.msc__input {
+  width: 100px;
+  padding: 4px 8px;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
 }
 
 /* ===== Animation ===== */
