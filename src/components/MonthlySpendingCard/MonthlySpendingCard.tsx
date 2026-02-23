@@ -94,7 +94,7 @@ const MonthlySpendingCard = () => {
                       }
                       onKeyDown={(e) => {
                         if (e.key === "Enter") {
-                          setActiveId(null); // 🔥 cerrar input
+                          setActiveId(null);
                         }
                       }}
                       placeholder="Enter amount"

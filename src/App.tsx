@@ -7,18 +7,26 @@ import perfilImage2 from "./assets/images/perfil2.jpg";
 import OrderTrackingTimeline from "./components/OrderTrackingTimeline/OrderTrackingTimeline";
 import WeatherCard from "./components/WeatherCard/WeatherCard";
 import MonthlySpendingCard from "./components/MonthlySpendingCard/MonthlySpendingCard";
+import ProductCard from "./components/ProductCard/ProductCard";
 
 function App() {
   return (
     <div className="app">
+      <div>
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+      </div>
+      <div>
+        <MonthlySpendingCard />
+        <OrderTrackingTimeline
+          order={new Date("2026-02-10")}
+          shipping={new Date("2026-02-11")}
+          transit={new Date("2026-02-11")}
+          sentToCustomer={new Date("2026-03-20")}
+        />
+      </div>
       <WeatherCard />
-      <MonthlySpendingCard />
-      <OrderTrackingTimeline
-        order={new Date("2026-02-10")}
-        shipping={new Date("2026-02-11")}
-        transit={new Date("2026-02-11")}
-        sentToCustomer={new Date("2026-03-20")}
-      />
       <ProfileCard
         backgroundImage={backgroundImage}
         imageUrl={perfilImage2}

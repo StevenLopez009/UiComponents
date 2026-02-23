@@ -34,7 +34,7 @@ const WeatherCard = () => {
         const data = await getCurrentWeather(selectedCity);
         setWeather(data);
       } catch (err) {
-        setError("No se pudo obtener el clima.");
+        setError(`No se pudo obtener el clima ${err}`);
       } finally {
         setLoading(false);
       }

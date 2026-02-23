@@ -3,11 +3,24 @@
 }
 
 .app {
-  background-color: rgb(221, 221, 221);
-  display: flex;
-  display: block;
-
-  gap: 20px;  
+  padding: 24px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #d8d9db;
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+  .app {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+}
 
