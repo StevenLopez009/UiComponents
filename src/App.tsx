@@ -7,18 +7,23 @@ import perfilImage2 from "./assets/images/perfil2.jpg";
 import OrderTrackingTimeline from "./components/OrderTrackingTimeline/OrderTrackingTimeline";
 import WeatherCard from "./components/WeatherCard/WeatherCard";
 import MonthlySpendingCard from "./components/MonthlySpendingCard/MonthlySpendingCard";
-import ProductCard from "./components/ProductCard/ProductCard";
+import ProductCardmui from "./components/ProductCard/ProductCardmui";
+import BatteryStatus from "./components/BatteryStatus/BatteryStatus";
 
 function App() {
   return (
     <div className="app">
-      <div>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+      <div className="app-container__1">
+        <ProductCardmui />
+        <ProductCardmui />
+        <ProductCardmui />
+        <BatteryStatus />
       </div>
-      <div>
+      <div className="app-container__2">
         <MonthlySpendingCard />
+        <WeatherCard />
+      </div>
+      <div className="app-container__3">
         <OrderTrackingTimeline
           order={new Date("2026-02-10")}
           shipping={new Date("2026-02-11")}
@@ -26,25 +31,27 @@ function App() {
           sentToCustomer={new Date("2026-03-20")}
         />
       </div>
-      <WeatherCard />
-      <ProfileCard
-        backgroundImage={backgroundImage}
-        imageUrl={perfilImage2}
-        name="Alex Turner"
-        profession="Desarrollador"
-        raiting={5}
-        hours={76}
-        months={2}
-      />
-      <ProfileCard
-        backgroundImage={backgroundImage2}
-        imageUrl={perfilImage}
-        name="Lilly Gallagher"
-        profession="Desingner"
-        raiting={25}
-        hours={99}
-        months={12}
-      />
+      <div className="app-container__4">
+        <ProfileCard
+          backgroundImage={backgroundImage}
+          imageUrl={perfilImage2}
+          name="Alex Turner"
+          profession="Desarrollador"
+          raiting={5}
+          hours={76}
+          months={2}
+        />
+        <ProfileCard
+          backgroundImage={backgroundImage2}
+          imageUrl={perfilImage}
+          name="Lilly Gallagher"
+          profession="Desingner"
+          raiting={25}
+          hours={99}
+          months={12}
+        />
+      </div>
+      <div className="app-container__5"></div>
     </div>
   );
 }
