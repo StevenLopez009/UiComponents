@@ -9,29 +9,31 @@ import WeatherCard from "./components/WeatherCard/WeatherCard";
 import MonthlySpendingCard from "./components/MonthlySpendingCard/MonthlySpendingCard";
 import ProductCardmui from "./components/ProductCard/ProductCardmui";
 import BatteryStatus from "./components/BatteryStatus/BatteryStatus";
+import StreakCounter from "./components/StreakCounter/StreakCounter";
 
 function App() {
   return (
-    <div className="app">
-      <div className="app-container__1">
+    <div className="grid-container">
+      <div className="grid-item grid-item_1">
         <ProductCardmui />
         <ProductCardmui />
         <ProductCardmui />
         <BatteryStatus />
       </div>
-      <div className="app-container__2">
+      <div className="grid-item grid-item_2">
         <MonthlySpendingCard />
         <WeatherCard />
       </div>
-      <div className="app-container__3">
+      <div className="grid-item grid-item_3">
         <OrderTrackingTimeline
           order={new Date("2026-02-10")}
           shipping={new Date("2026-02-11")}
           transit={new Date("2026-02-11")}
           sentToCustomer={new Date("2026-03-20")}
         />
+        <StreakCounter />
       </div>
-      <div className="app-container__4">
+      <div className="grid-item grid-item_4">
         <ProfileCard
           backgroundImage={backgroundImage}
           imageUrl={perfilImage2}
@@ -51,7 +53,6 @@ function App() {
           months={12}
         />
       </div>
-      <div className="app-container__5"></div>
     </div>
   );
 }

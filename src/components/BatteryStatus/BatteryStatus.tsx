@@ -44,18 +44,25 @@ const BatteryStatus = () => {
 
   return (
     <div className="battery-container">
-      <p>Batería: {level}%</p>
+      <div className="battery-header">
+        <p className="battery-status">
+          {charging ? "⚡ Charging..." : "🔌 Not charging"}
+        </p>
+        <p className="battery-info"> Batery Level : {level}%</p>
+      </div>
+
+      <div className="battery-scale">
+        <span>0</span>
+        <span>50</span>
+        <span>100</span>
+      </div>
+
       <div className="battery-bar">
         <div
-          style={{
-            height: "100%",
-            width: `${level}%`,
-            backgroundColor: level > 20 ? "green" : "red",
-            transition: "width 0.3s ease",
-          }}
+          className={`battery-fill ${level > 20 ? "high" : "low"}`}
+          style={{ width: `${level}%` }}
         />
       </div>
-      <p>{charging ? "⚡ Cargando" : "🔌 No cargando"}</p>
     </div>
   );
 };

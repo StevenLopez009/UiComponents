@@ -16,12 +16,11 @@ const ProductCardmui = () => {
       sx={{
         display: "flex",
         alignItems: "center",
-        p: 2,
+        padding: "2px 0",
         borderRadius: "20px",
         boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
         width: "100%",
-        marginTop: 1,
-        height: 160,
+        height: 120,
       }}
     >
       {/* Imagen */}
