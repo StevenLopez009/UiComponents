@@ -13,47 +13,50 @@ import StreakCounter from "./components/StreakCounter/StreakCounter";
 
 function App() {
   return (
-    <div className="grid-container">
-      <div className="grid-item grid-item_1">
-        <ProductCardmui />
-        <ProductCardmui />
-        <ProductCardmui />
-        <BatteryStatus />
+    <>
+      <div className="grid-container">
+        <div className="grid-item grid-item_1">
+          <ProductCardmui />
+          <ProductCardmui />
+          <ProductCardmui />
+          <BatteryStatus />
+        </div>
+        <div className="grid-item grid-item_2">
+          <MonthlySpendingCard />
+          <WeatherCard />
+          <StreakCounter />
+        </div>
+        <div className="grid-item grid-item_3">
+          <OrderTrackingTimeline
+            order={new Date("2026-02-10")}
+            shipping={new Date("2026-02-11")}
+            transit={new Date("2026-02-11")}
+            sentToCustomer={new Date("2026-03-20")}
+          />
+        </div>
+
+        <div className="grid-item grid-item_4">
+          <ProfileCard
+            backgroundImage={backgroundImage}
+            imageUrl={perfilImage2}
+            name="Alex Turner"
+            profession="Desarrollador"
+            raiting={5}
+            hours={76}
+            months={2}
+          />
+          <ProfileCard
+            backgroundImage={backgroundImage2}
+            imageUrl={perfilImage}
+            name="Lilly Gallagher"
+            profession="Desingner"
+            raiting={25}
+            hours={99}
+            months={12}
+          />
+        </div>
       </div>
-      <div className="grid-item grid-item_2">
-        <MonthlySpendingCard />
-        <WeatherCard />
-      </div>
-      <div className="grid-item grid-item_3">
-        <OrderTrackingTimeline
-          order={new Date("2026-02-10")}
-          shipping={new Date("2026-02-11")}
-          transit={new Date("2026-02-11")}
-          sentToCustomer={new Date("2026-03-20")}
-        />
-        <StreakCounter />
-      </div>
-      <div className="grid-item grid-item_4">
-        <ProfileCard
-          backgroundImage={backgroundImage}
-          imageUrl={perfilImage2}
-          name="Alex Turner"
-          profession="Desarrollador"
-          raiting={5}
-          hours={76}
-          months={2}
-        />
-        <ProfileCard
-          backgroundImage={backgroundImage2}
-          imageUrl={perfilImage}
-          name="Lilly Gallagher"
-          profession="Desingner"
-          raiting={25}
-          hours={99}
-          months={12}
-        />
-      </div>
-    </div>
+    </>
   );
 }
 
