@@ -10,6 +10,7 @@ import MonthlySpendingCard from "./components/MonthlySpendingCard/MonthlySpendin
 import ProductCardmui from "./components/ProductCard/ProductCardmui";
 import BatteryStatus from "./components/BatteryStatus/BatteryStatus";
 import StreakCounter from "./components/StreakCounter/StreakCounter";
+import UserForm from "./components/Form/UserForm";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <ProductCardmui />
           <ProductCardmui />
           <BatteryStatus />
+          <UserForm />
         </div>
         <div className="grid-item grid-item_2">
           <MonthlySpendingCard />
