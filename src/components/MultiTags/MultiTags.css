@@ -1,0 +1,65 @@
+.tags-container {
+  width: 380px;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 12px;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* Contenedor de seleccionados */
+.selected-container {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Contenedor disponibles */
+.available-container {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Estilo general tag */
+.tag {
+  padding: 8px 14px;
+  background: #e5e5ea;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.9s ease;
+  user-select: none;
+}
+
+.tag:hover {
+  transform: translateY(-2px);
+  background: #dcdce1;
+}
+
+/* Tag seleccionado */
+.tag.selected {
+  background: #f1f1f1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* X para quitar */
+.close {
+  margin-left: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
