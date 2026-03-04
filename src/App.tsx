@@ -11,10 +11,20 @@ import ProductCardmui from "./components/ProductCard/ProductCardmui";
 import BatteryStatus from "./components/BatteryStatus/BatteryStatus";
 import StreakCounter from "./components/StreakCounter/StreakCounter";
 import MultiTags from "./components/MultiTags/MultiTags";
+import ProductCardTwo from "./components/ProductCardTwo/ProductCardTwo";
+import productOne from "./assets/images/tenis0.jpg";
+import productTwo from "./assets/images/tenis1.jpg";
 
 function App() {
+  const productImages = [productOne, productTwo];
   return (
     <>
+      <ProductCardTwo
+        productImages={productImages}
+        productName="Nike Airforce1 Premium"
+        description="Own the Airforce step back into classic hoops style with a durable leather"
+        price={12000}
+      />
       <MultiTags />
       <ProductCardmui />
       <ProductCardmui />
