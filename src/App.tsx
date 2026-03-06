@@ -14,6 +14,7 @@ import MultiTags from "./components/MultiTags/MultiTags";
 import ProductCardTwo from "./components/ProductCardTwo/ProductCardTwo";
 import productOne from "./assets/images/tenis0.jpg";
 import productTwo from "./assets/images/tenis1.jpg";
+import UploadForm from "./components/UploaderFile/UploaderForm";
 
 function App() {
   const productImages = [productOne, productTwo];
@@ -25,6 +26,7 @@ function App() {
         description="Own the Airforce step back into classic hoops style with a durable leather"
         price={12000}
       />
+      <UploadForm />
       <MultiTags />
       <ProductCardmui />
       <ProductCardmui />
