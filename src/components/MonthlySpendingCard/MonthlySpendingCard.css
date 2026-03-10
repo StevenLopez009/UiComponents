@@ -1,8 +1,8 @@
 .msc {
   background: #ffffff;
-  border-radius: 28px;
+  border-radius: 20px;
   padding: 20px;
-  width: 100%;
+  width: 280px;
   height: fit-content;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.15);

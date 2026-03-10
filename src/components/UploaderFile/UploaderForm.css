@@ -1,6 +1,7 @@
 .uploader {
-  max-width: 400px;
+  width: 280px;
   text-align: center;
+  height: 380px;
   background-color: #fff;
   padding: 10px;
   border-radius: 20px;
@@ -27,6 +28,7 @@
   padding: 40px;
   cursor: pointer;
   transition: background 0.3s;
+  overflow: hidden;
 }
 
 .uploader__dropzone:hover {
@@ -43,4 +45,5 @@
 
 .uploader__list {
   margin-top: 20px;
+  border: 2px solid #757575;
 }

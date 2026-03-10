@@ -1,3 +1,8 @@
+import { apiClient } from "../api/apiClient";
+
+const WEATHER_BASE_URL = "https://api.weatherapi.com/v1";
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+
 export interface WeatherResponse {
   location: {
     name: string;
@@ -15,18 +20,17 @@ export interface WeatherResponse {
   };
 }
 
-const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
-const BASE_URL = "https://api.weatherapi.com/v1/current.json";
-console.log("API KEY:", API_KEY);
-
-export const getCurrentWeather = async (
-  city: string,
-): Promise<WeatherResponse> => {
-  const response = await fetch(`${BASE_URL}?key=${API_KEY}&q=${city}`);
-
-  if (!response.ok) {
-    throw new Error("Error fetching weather data");
-  }
-
-  return response.json();
+export const WeatherService = {
+  getCurrent: (city: string): Promise<WeatherResponse> => {
+    return apiClient<WeatherResponse>(
+      WEATHER_BASE_URL,
+      "/current.json",
+      {},
+      {
+        key: API_KEY,
+        q: city,
+        lang: "es",
+      },
+    );
+  },
 };

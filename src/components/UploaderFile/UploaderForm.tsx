@@ -56,10 +56,6 @@ export default function UploadForm() {
         <div className="uploader__list">
           <UploaderList files={formik.values.files} />
         </div>
-        <button type="submit" className="uploader__button">
-          Enviar
-        </button>
-        <button>Cancelar</button>
       </div>
     </>
   );

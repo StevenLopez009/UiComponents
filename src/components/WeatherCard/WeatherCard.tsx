@@ -2,10 +2,9 @@ import londonImg from "../../assets/images/london.jpg";
 import newYorkImg from "../../assets/images/newyork.jpg";
 import tokyoImg from "../../assets/images/tokio.jpg";
 import sidneyImg from "../../assets/images/sidney.jpg";
-
 import { useEffect, useState } from "react";
 import {
-  getCurrentWeather,
+  WeatherService,
   type WeatherResponse,
 } from "../../services/weatherService";
 import "./WeatherCard.css";
@@ -31,7 +30,7 @@ const WeatherCard = () => {
     const fetchWeather = async () => {
       try {
         setLoading(true);
-        const data = await getCurrentWeather(selectedCity);
+        const data = await WeatherService.getCurrent(selectedCity);
         setWeather(data);
       } catch (err) {
         setError(`No se pudo obtener el clima ${err}`);

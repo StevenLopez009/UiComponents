@@ -1,8 +1,9 @@
 .tags-container {
-  width: 380px;
+  width: 280px;
+  height: 380px;
   background: #f4f4f4;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 20px;
   font-family: sans-serif;
 }
 

@@ -16,11 +16,12 @@ const ProductCardmui = () => {
       sx={{
         display: "flex",
         alignItems: "center",
-        padding: "2px 0",
+        padding: "2px",
         borderRadius: "20px",
         boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-        width: "30%",
+        width: "100%",
         height: 120,
+        margin: "5px",
       }}
     >
       <CardMedia

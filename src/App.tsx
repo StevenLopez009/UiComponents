@@ -15,11 +15,13 @@ import ProductCardTwo from "./components/ProductCardTwo/ProductCardTwo";
 import productOne from "./assets/images/tenis0.jpg";
 import productTwo from "./assets/images/tenis1.jpg";
 import UploadForm from "./components/UploaderFile/UploaderForm";
+import MusicPlayerCard from "./components/MusicPlayerCard/MusicPlayerCard";
 
 function App() {
   const productImages = [productOne, productTwo];
   return (
-    <>
+    <div className="container">
+      <MusicPlayerCard />
       <ProductCardTwo
         productImages={productImages}
         productName="Nike Airforce1 Premium"
@@ -28,9 +30,12 @@ function App() {
       />
       <UploadForm />
       <MultiTags />
-      <ProductCardmui />
-      <ProductCardmui />
-      <ProductCardmui />
+      <div className="containerProductCard">
+        <ProductCardmui />
+        <ProductCardmui />
+        <ProductCardmui />
+      </div>
+
       <BatteryStatus />
       <MonthlySpendingCard />
       <WeatherCard />
@@ -60,7 +65,7 @@ function App() {
         hours={99}
         months={12}
       />
-    </>
+    </div>
   );
 }
 

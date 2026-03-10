@@ -56,8 +56,6 @@ const UploaderList = ({ files }) => {
                 />
               </div>
             </div>
-
-            <span>{progress[file.name] || 0}%</span>
           </div>
         </div>
       ))}
